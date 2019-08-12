@@ -1,0 +1,10 @@
+th {
+    background-color: #398bf7;;
+    color: white;
+  }
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  th, td {
+    border-bottom: 1px solid #bebaba;
+  }
