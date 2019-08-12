@@ -1,0 +1,165 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Name</label>
+        <input type="text" class="form-control" formControlName="name" #name [(ngModel)] = "business.name" />
+      </div>
+      <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['name'].errors.required">
+          Person Name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Number </label>
+        <input type="text" class="form-control" formControlName="number" #number [(ngModel)] = "business.number" />
+      </div>
+      <div *ngIf="angForm.controls['number'].invalid && (angForm.controls['number'].dirty || angForm.controls['number'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['number'].errors.required">
+          Person Number is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4"> Car Description </label>
+        <input type="text" class="form-control" formControlName="description" #description [(ngModel)] = "business.description" />
+      </div>
+      <div *ngIf="angForm.controls['description'].invalid && (angForm.controls['description'].dirty || angForm.controls['description'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['description'].errors.required">
+        Car Description is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4"> Make </label>
+        <input type="text" class="form-control" formControlName="make" #make [(ngModel)] = "business.make" />
+      </div>
+      <div *ngIf="angForm.controls['make'].invalid && (angForm.controls['make'].dirty || angForm.controls['make'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['make'].errors.required">
+        Car Make is required.
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-md-4"> Model </label>
+        <input type="text" class="form-control" formControlName="model" #model [(ngModel)] = "business.model" />
+      </div>
+      <div *ngIf="angForm.controls['model'].invalid && (angForm.controls['model'].dirty || angForm.controls['model'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['model'].errors.required">
+        Car Model is required.
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-md-4"> Version </label>
+        <input type="text" class="form-control" formControlName="version" #version [(ngModel)] = "business.version" />
+      </div>
+      <div *ngIf="angForm.controls['version'].invalid && (angForm.controls['version'].dirty || angForm.controls['version'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['version'].errors.required">
+        Car Version is required.
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-md-4"> Transmission </label>
+        <input type="text" class="form-control" formControlName="transmission" #transmission [(ngModel)] = "business.transmission" />
+      </div>
+      <div *ngIf="angForm.controls['transmission'].invalid && (angForm.controls['transmission'].dirty || angForm.controls['transmission'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['transmission'].errors.required">
+        Car Transmission is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4"> Color </label>
+        <input type="text" class="form-control" formControlName="color" #color [(ngModel)] = "business.color" />
+      </div>
+      <div *ngIf="angForm.controls['color'].invalid && (angForm.controls['color'].dirty || angForm.controls['color'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['color'].errors.required">
+        Car Color is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4"> Mileage </label>
+        <input type="text" class="form-control" formControlName="mileage" #mileage [(ngModel)] = "business.mileage" />
+      </div>
+      <div *ngIf="angForm.controls['mileage'].invalid && (angForm.controls['mileage'].dirty || angForm.controls['mileage'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['mileage'].errors.required">
+        Car Mileage is required.
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-md-4"> YOM </label>
+        <input type="text" class="form-control" formControlName="yom" #yom [(ngModel)] = "business.yom" />
+      </div>
+      <div *ngIf="angForm.controls['yom'].invalid && (angForm.controls['yom'].dirty || angForm.controls['yom'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['yom'].errors.required">
+        Car Year of Make is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4"> Refrence </label>
+        <input type="text" class="form-control" formControlName="refrence" #refrence [(ngModel)] = "business.refrence" />
+      </div>
+      <div *ngIf="angForm.controls['refrence'].invalid && (angForm.controls['refrence'].dirty || angForm.controls['refrence'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['refrence'].errors.required">
+         Refrence is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4"> Note </label>
+        <input type="text" class="form-control" formControlName="note" #note [(ngModel)] = "business.note" />
+      </div>
+      <div *ngIf="angForm.controls['note'].invalid && (angForm.controls['note'].dirty || angForm.controls['note'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['note'].errors.required">
+          Note is required.
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-md-4"> Availability </label>
+        <input type="text" class="form-control" formControlName="availability" #availability [(ngModel)] = "business.availability" />
+      </div>
+      <div *ngIf="angForm.controls['availability'].invalid && (angForm.controls['availability'].dirty || angForm.controls['availability'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['availability'].errors.required">
+          Availability is required.
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-md-4"> Price </label>
+        <input type="text" class="form-control" formControlName="price" #price [(ngModel)] = "business.price" />
+      </div>
+      <div *ngIf="angForm.controls['price'].invalid && (angForm.controls['price'].dirty || angForm.controls['price'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['price'].errors.required">
+          Price is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4"> status </label>
+        <input type="text" class="form-control" formControlName="status" #status [(ngModel)] = "business.status" />
+      </div>
+      <div *ngIf="angForm.controls['status'].invalid && (angForm.controls['status'].dirty || angForm.controls['status'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['status'].errors.required">
+          Status is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button (click)="updateStock(name.value, number.value, description.value , make.value, model.value, version.value,transmission.value, color.value, mileage.value, yom.value, refrence.value, note.value, availability.value, price.value, status.value)"
+        [disabled]="angForm.invalid"
+        class="btn btn-primary">Update Stock</button>
+      </div>
+    </form>
+  </div>
+</div>
